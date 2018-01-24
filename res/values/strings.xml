@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">yanyoo</string>
+    <string name="title_activity_assign_view">查看活动</string>
+    <string name="title_activity_assign_list">活动列表</string>
+    <string name="title_activity_assign_new">创建活动</string>
+    <string name="title_activity_assign_update">修改活动</string>
+    <drawable name="button_normal">#19A4ED</drawable>
+    <drawable name="button_pressed">#1088C9</drawable>
+</resources>

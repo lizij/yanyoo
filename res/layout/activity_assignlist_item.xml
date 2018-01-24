@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:id="@+id/activity" android:layout_alignParentTop="true" android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp" android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/activity"
+            />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" android:layout_alignTop="@+id/activity"
+            android:layout_alignStart="@+id/activity" android:layout_alignBottom="@+id/activity"
+            android:layout_alignEnd="@+id/activity"
+            android:background="@drawable/textview_radius_style"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015. 07. 12."
+            android:id="@+id/assignlist_item_time" android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" android:layout_marginStart="20dp" android:layout_marginTop="20dp"
+            android:textColor="#828282"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="李子健"
+              android:textStyle="bold"
+              android:id="@+id/assignlist_item_sponsor"
+              android:textColor="#828282" android:textSize="15dp"
+              android:layout_marginTop="10dp"
+              android:layout_below="@+id/assignlist_item_time" android:layout_alignStart="@+id/assignlist_item_time"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发起"
+              android:id="@+id/faqi" android:textColor="#828282" android:textSize="15dp"
+              android:textStyle="bold"
+              android:layout_alignTop="@+id/assignlist_item_sponsor"
+              android:layout_toEndOf="@+id/assignlist_item_sponsor" android:layout_marginStart="10dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="五道口吃饭"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:id="@+id/assignlist_item_title" android:layout_alignTop="@+id/assignlist_item_time"
+            android:layout_alignStart="@+id/activity"
+            android:layout_marginStart="20dp"
+            android:textColor="#FFFFFF"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="吃饭 活动"
+              android:textStyle="bold" android:textSize="15dp" android:id="@+id/assignlist_item_type"
+              android:textColor="#AAFFFFFF" android:layout_alignTop="@+id/faqi"
+              android:layout_alignStart="@+id/assignlist_item_title"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:id="@+id/textView6" android:layout_below="@+id/activity" android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

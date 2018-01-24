@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageView"
+            android:src="@drawable/newactivity"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" android:layout_alignParentEnd="true"/>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp" android:layout_below="@+id/imageView"
+            android:layout_alignParentStart="true"
+            android:background="#19A4ED" android:id="@+id/relativeLayout">
+        <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="活动名称"
+                android:textColorHint = "#90FFFFFF"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                android:id="@+id/assignnew_title"
+                android:layout_alignParentStart="true" android:layout_marginStart="85dp"
+                android:layout_marginTop="8dp"/>
+        <EditText android:layout_width="150dp" android:layout_height="wrap_content" android:hint="开展日期"
+                  android:textColorHint="#90FFFFFF" android:textSize="20dp" android:textColor="#FFFFFF"
+                  android:id="@+id/assignnew_time"
+                  android:layout_below="@+id/assignnew_title" android:layout_alignStart="@+id/assignnew_title"/>
+        <EditText android:layout_width="150dp" android:layout_height="wrap_content" android:hint="活动类型"
+                  android:textColorHint="#90FFFFFF" android:textSize="20dp" android:textColor="#FFFFFF"
+                  android:id="@+id/assignnew_type"
+                  android:layout_alignTop="@+id/assignnew_time" android:layout_toEndOf="@+id/assignnew_time"/>
+    </RelativeLayout>
+    <EditText android:layout_width="150dp" android:layout_height="wrap_content" android:hint="发布状态"
+              android:textSize="20dp"
+              android:id="@+id/assignnew_state"
+              android:layout_marginLeft="80dp"
+              android:layout_marginTop="38dp" android:layout_below="@+id/relativeLayout"
+              android:layout_alignParentStart="true" android:layout_marginStart="70dp"/>
+    <EditText android:layout_width="150dp" android:layout_height="wrap_content" android:hint="最大人数"
+              android:textSize="20dp"
+              android:id="@+id/assignnew_maxmem"
+              android:layout_alignTop="@+id/assignnew_state" android:layout_toEndOf="@+id/assignnew_state"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/assignnew_content"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:hint="请输入活动具体内容"
+            android:layout_below="@+id/assignnew_state" android:layout_alignStart="@+id/assignnew_state"/>
+    <com.yanyoo.ui.CircleButton
+            android:id="@+id/assignnew_submit"
+            android:layout_width="74dip"
+            android:layout_height="74dip"
+            android:src="@drawable/ic_action_tick"
+            app:cb_color="#99CC00"
+            android:layout_below="@+id/relativeLayout" android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-37dp"/>
+
+
+</RelativeLayout>

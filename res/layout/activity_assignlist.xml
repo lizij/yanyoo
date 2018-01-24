@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <Spinner
+            android:id="@+id/assignlist_searchmode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/assignlist_searchcont" android:layout_alignTop="@+id/assignlist_search"
+            android:layout_alignBottom="@+id/assignlist_searchcont"/>
+    <Button
+            android:id="@+id/assignlist_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询"
+            android:layout_alignParentTop="true" android:layout_alignParentEnd="true"/>
+    <EditText
+            android:id="@+id/assignlist_searchcont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_alignBottom="@+id/assignlist_search" android:layout_toStartOf="@+id/assignlist_search"
+            android:layout_alignParentTop="true">
+
+        <requestFocus />
+    </EditText>
+    <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/assignlist_listview" android:layout_centerHorizontal="true"
+            android:layout_below="@+id/assignlist_searchmode"
+            android:divider="@null" />
+</RelativeLayout>

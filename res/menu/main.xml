@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.yanyoo.activities.AssignListActivity">
+
+    <item
+            android:id="@+id/assignnew_bt"
+            android:icon="@drawable/add"
+            android:showAsAction="always"
+            android:title="创建活动"/>
+
+    <item
+            android:id="@+id/assignlist_refresh"
+            android:showAsAction="never"
+            android:title="刷新"/>
+
+    <item
+            android:id="@+id/assignlist_assponsor"
+            android:showAsAction="never"
+            android:title="我发起的"/>
+
+    <item
+            android:id="@+id/assignlist_asmember"
+            android:showAsAction="never"
+            android:title="我参与的"/>
+
+</menu>
